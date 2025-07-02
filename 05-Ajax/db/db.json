@@ -1,0 +1,38 @@
+{
+  "materie": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": "2",
+      "title": "javscript",
+      "author": "Dario Mennillo"
+    },
+    {
+      "id": "3",
+      "title": "Spring",
+      "author": "Roberto"
+    },
+    {
+      "id": "4",
+      "title": "Bootstrap",
+      "author": "Oscar"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "autore": {
+    "nome": "Dario Mennillo",
+    "data": "01/07/2025"
+  }
+}
