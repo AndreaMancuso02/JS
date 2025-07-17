@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progetto JS</title>
-    
+    <title>Document</title>
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./node_modules//bootstrap/dist/css/bootstrap.css">
 </head>
+
 <body>
-    
     <nav>
-        <nav
-            class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
-                <button
-                    class="navbar-toggler d-lg-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId"
-                    aria-controls="collapsibleNavId"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page"
-                                >Home
-                                <span class="visually-hidden">(current)</span></a
-                            >
+                            <a class="nav-link active" href="#" aria-current="page">Home
+                                <span class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
@@ -49,13 +41,23 @@
         </nav>
     </nav>
 
-    <main class="container" id="mainCont">
-        <h1>Progetto JS con librerie esterne</h1>
+    <main class="container">
+        <h1>Carrello</h1>
+        <div class="col-4">
+            <ul class="list-group" id="lista">
 
-        <div id="showroom" class="row mt-5"></div>
+                <!-- <li class="list-group-item d-flex align-items-center">An item
+                    <span href="" class="ms-auto">
+                        <i class="bi bi-trash" style="color: red;"></i>
+                    </span>
+                </li> -->
+
+            </ul>
+        </div>
     </main>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/carrello.js"></script>
 </body>
+
 </html>

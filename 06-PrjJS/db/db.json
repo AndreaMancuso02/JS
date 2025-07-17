@@ -46,7 +46,7 @@
       "id": "7",
       "destinazione": "Tallinn, Estonia",
       "prezzo": "€420",
-      "immagine": "./db/public/img/tallinn.jpg",
+      "immagine": "./db/public/img/tallin.jpg",
       "disponibilita": true
     },
     {
@@ -73,9 +73,9 @@
   ],
   "carrello": [
     {
-      "id": "1",
-      "destinazione": "Hawaii",
-      "prezzo": "€1850"
+      "id": "2",
+      "destinazione": "Rio de Janeiro, Brasile",
+      "prezzo": "€1250"
     }
   ]
 }
