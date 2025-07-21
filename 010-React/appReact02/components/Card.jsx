@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Card.css'
 
 // function Card(){
@@ -57,8 +58,12 @@ import './Card.css'
 // in questa versione utilizzerò una parola chiave "children" per raccogliere ciò che scrivo a mano nel parent all'interno del settore child. quindi Childer non è una semplice prop, ma diventa parola chiave
 
 function Card({title, description, imgURL, children, isSpotted}){
+    const [changeColor, seChangeColor] = useState(isSpotted)
+
+    const heandleClick = () => {seChangeColor(!changeColor)}
+
         return(
-                <div className="card">
+                <div className={`${"card"} ${changeColor ? "bg_v" : "bg_r"}`}>
                     <div className="card-image">
                         <img src={imgURL} alt=""/>
                     </div>
@@ -69,7 +74,12 @@ function Card({title, description, imgURL, children, isSpotted}){
                     </div>
 
                     <div>
-                        <span>{isSpotted ? "Avvistato": "Non avvistato"}</span>
+                        <button onClick={heandleClick}
+                         className={changeColor ? "bg_v" : "bg_r"}
+                         style={{border: "1px solid black"
+                         }}>
+                            {changeColor ? "Avvistato" : "Non avvistato"}
+                        </button>
                     </div>
                 </div>
         )
