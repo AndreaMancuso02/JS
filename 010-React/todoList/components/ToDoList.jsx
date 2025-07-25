@@ -1,24 +1,24 @@
-import { useState } from "react";
 import Form from "./Form"
+import './ToDoList.css'
 
-function ToDoList(){
-
-    const [todo, setTodo] = useState([
-        {
-            todo: "",
-            data: ""
-        }
-    ]);
-
-    const addTodo = (newTodo) =>{
-    setTodo([...todo, newTodo]);
-  }
-
-    return(
-        <>
-        <Form addTodo={addTodo}></Form>
-        </>
-    )
+function ToDoList({ todos, addTodo, removeTodo }) {
+  return (
+    <>
+      <Form addTodo={addTodo} />
+      <ul>
+        {todos.map((todo) => (
+          <li key={todo.id}>
+            {todo.todo} ({todo.data})
+            <button
+            onClick={() => removeTodo(todo.id)}
+            >
+              X
+            </button>
+          </li>
+        ))}
+      </ul>
+    </>
+  )
 }
 
 export default ToDoList
